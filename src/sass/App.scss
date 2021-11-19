@@ -3,6 +3,7 @@
 @import 'utils/mixins';
 
 // Vendors
+@import 'vendors/normalize';
 
 // Base
 
@@ -11,6 +12,8 @@
 // Layout
 @import 'layouts/nav';
 @import 'layouts/homepage';
+@import 'layouts/thumb';
+@import 'layouts/location';
 
 // Pages
 
