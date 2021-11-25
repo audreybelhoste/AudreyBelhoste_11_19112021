@@ -8,13 +8,13 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import Footer from './Footer';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Nav />
-
         <Switch>
           <Route path="/about">
             <About />
@@ -26,6 +26,7 @@ function App() {
             <Homepage />
           </Route>
         </Switch>
+        <Footer />
       </div>
     </Router>
   );

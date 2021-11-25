@@ -1,0 +1,38 @@
+.main-header{
+	margin: 0 auto;
+	width: calc(100vw - 40px);
+	max-width: 1240px;
+	height: 100px;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+
+	@include tablet{
+		height: 220px;
+		border-radius: 25px;
+	}
+
+	img{
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+		filter: brightness(70%);
+	}
+
+	&__baseline{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 24px;
+		color: $brand-light;
+		margin: 0;
+		padding: 15px;
+		line-height: 1;
+		width: 100%;
+
+		@include tablet{
+			font-size: 48px;
+			text-align: center;
+		}
+	}
+}

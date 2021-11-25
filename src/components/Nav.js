@@ -1,5 +1,5 @@
 
-import logo from '../logo.svg';
+import logo from '../assets/images/logo.svg';
 import { Component } from "react";
 import {
 	NavLink

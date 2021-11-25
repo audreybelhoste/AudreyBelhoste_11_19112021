@@ -1,0 +1,14 @@
+.main-footer{
+	background-color: $brand-dark;
+	color: $brand-light;
+	text-align: center;
+	padding: 60px 20px;
+
+	@include laptop{
+		padding: 60px 20px 30px;
+
+		p{
+			font-size: 24px;
+		}
+	}
+}
