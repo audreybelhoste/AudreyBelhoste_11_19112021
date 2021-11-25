@@ -1,29 +1,64 @@
 .location{
 	max-width: 1240px;
 	margin: 0 auto;
+	padding: 20px;
 
 	&__infos{
-		display: flex;
-		justify-content: space-between;
 		color: $brand-primary;
 
+		@include laptop{
+			display: flex;
+			justify-content: space-between;
+		}
+
 		&__title{
-			font-size: 36px;
+			font-size: 18px;
+
+			@include laptop{
+				font-size: 36px;
+			}
 		}
 
 		&__location{
-			font-size: 18px;
+			font-size: 14px;
+			margin: 0;
+
+			@include laptop {
+				font-size: 18px;
+			}
+		}
+
+		&__bloc2{
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 15px;
+
+			@include laptop{
+				flex-direction: column;
+				justify-content: center;
+			}
 		}
 
 		&__host{
 			display: flex;
 
+			@include laptop {
+				margin-bottom: 30px;
+			}
+		
 			&__img-container{
-				width: 64px;
-				height: 64px;
+				width: 32px;
+				height: 32px;
 				border-radius: 100%;
 				overflow: hidden;
 				margin-left: 10px;
+
+				@include laptop{
+					width: 64px;
+					height: 64px;
+				}
 
 				img{
 					object-fit: cover;
@@ -35,11 +70,17 @@
 	}
 
 	&__accordions__container{
-		display: flex;
-		justify-content: space-between;
+		@include laptop{
+			display: flex;
+			justify-content: space-between;
+		}
 
 		& > * {
-			width: calc(50% - 38px);
+			width: 100%;
+
+			@include laptop{
+				width: calc(50% - 38px);
+			}
 		}
 	}
 }

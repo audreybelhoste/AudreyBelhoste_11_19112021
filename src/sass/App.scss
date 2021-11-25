@@ -6,10 +6,12 @@
 @import 'vendors/normalize';
 
 // Base
+@import 'base/typography';
 
 // Components
 @import 'components/tag';
 @import 'components/accordion';
+@import 'components/rating';
 
 // Layout
 @import 'layouts/nav';

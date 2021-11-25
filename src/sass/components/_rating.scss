@@ -1,0 +1,11 @@
+.fa-star{
+	font-size: 15px;
+
+	@include laptop{
+		font-size: 30px;
+	}
+
+	&.empty{
+		color: $brand-grey;
+	}
+}
