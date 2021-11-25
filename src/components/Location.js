@@ -1,10 +1,14 @@
-import { useParams } from "react-router";
-import { data } from "../data";
+import { Component } from "react";
+import { withRouter } from "react-router"
+import { getLocationById } from "../services/locationService"
+import Tag from "./Tag";
+import Accordion from "./Accordion";
 
-function Location() {
-		const { id } = useParams();
+class Location extends Component {
+	render() {
+		const id = this.props.match.params.id;
 
-		const currentLocation = data.filter((elt) => elt.id === id)[0];
+		const currentLocation = getLocationById(id);
 
 		return (
 			<div className="location">
@@ -15,18 +19,32 @@ function Location() {
 					</div>
 					<div className="location__infos__host">
 						<p>{currentLocation.host.name}</p>
-						<div class="location__infos__host__img-container">
+						<div className="location__infos__host__img-container">
 							<img src={currentLocation.host.picture} alt={currentLocation.host.name} />
 						</div>
 					</div>
 				</div>
-				<ul className="location__tags">
-					{currentLocation.tags.map((element) => (
-						<li className="location__tags__item">{element}</li>
+				<ul className="tags">
+					{currentLocation.tags.map((element, key) => (
+						<Tag 
+							element={element}
+							key={key}
+						/>
 					))}
 				</ul>
+				<div className="location__accordions__container">
+					<Accordion 
+						title='Description'
+						content={currentLocation.description}
+					/>
+					<Accordion
+						title='Equipements'
+						content={currentLocation.equipments}
+					/>
+				</div>
 			</div>
 		)
+	}
 }
 
-export default Location
+export default withRouter(Location)

@@ -1,6 +1,6 @@
 import { Component } from "react";
 import Thumb from "./Thumb";
-import { data } from "../data";
+import { getAllLocations } from "../services/locationService";
 
 class Homepage extends Component {
 	render() {
@@ -8,13 +8,13 @@ class Homepage extends Component {
 			<div className="homepage">
 				<main className="main-content">
 					<div className="thumb-container">
-						{data.map((element) => (
-								<Thumb
-									key={element.id}
-									title={element.title}
-									cover={element.cover}
-									id={element.id}
-								/>
+						{getAllLocations().map((element) => (
+							<Thumb
+								key={element.id}
+								title={element.title}
+								cover={element.cover}
+								id={element.id}
+							/>
 						))}
 					</div>
 				</main>

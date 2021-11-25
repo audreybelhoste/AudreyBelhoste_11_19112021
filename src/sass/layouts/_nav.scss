@@ -11,6 +11,15 @@
 
 		&__item{
 			margin-right: 57px;
+			
+			a{
+				text-decoration: none;
+				color: $brand-primary;
+
+				&.is-active{
+					text-decoration: underline;
+				}
+			}
 
 			&:last-child{
 				margin-right: 0;

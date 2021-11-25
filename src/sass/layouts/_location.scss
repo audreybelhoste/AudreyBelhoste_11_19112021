@@ -34,17 +34,12 @@
 		}
 	}
 
-	&__tags{
+	&__accordions__container{
 		display: flex;
-		padding: 0;
+		justify-content: space-between;
 
-		&__item{
-			background-color: $brand-primary;
-			color: $brand-light;
-			padding: 2px 40px;
-			list-style: none;
-			border-radius: 10px;
-			margin-right: 10px;
+		& > * {
+			width: calc(50% - 38px);
 		}
 	}
 }

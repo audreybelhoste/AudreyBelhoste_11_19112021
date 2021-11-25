@@ -1,0 +1,45 @@
+.accordion{
+	margin-bottom: 30px;
+
+	&__title{
+		display: flex;
+		background-color: $brand-primary;
+		color: $brand-light;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 18px;
+		padding: 13px 20px;
+		border-radius: 10px;
+
+		p{
+			margin: 0;
+		}
+	}
+
+	&__content{
+		background-color: $brand-primary-light;
+		color: $brand-primary;
+		padding: 35px 20px;
+		border-radius: 10px;
+
+		p{
+			margin: 0;
+			font-size: 18px;
+		}
+
+		ul{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			font-size: 18px;
+		}
+
+		&-open{
+			display: block;
+		}
+
+		&-close{
+			display: none;
+		}
+	}
+}

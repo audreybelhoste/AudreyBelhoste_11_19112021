@@ -8,12 +8,15 @@
 // Base
 
 // Components
+@import 'components/tag';
+@import 'components/accordion';
 
 // Layout
 @import 'layouts/nav';
 @import 'layouts/homepage';
 @import 'layouts/thumb';
 @import 'layouts/location';
+@import 'layouts/about';
 
 // Pages
 
