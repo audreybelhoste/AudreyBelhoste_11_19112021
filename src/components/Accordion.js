@@ -23,7 +23,7 @@ class Accordion extends React.Component {
 				<div className="accordion__item">
 					<div className="accordion__title" onClick={() => this.setState({ isOpen: !this.state.isOpen })}>
 						<p>{title}</p>
-						<FontAwesomeIcon icon={this.state.isOpen ? faAngleDown : faAngleUp} />
+						<FontAwesomeIcon icon={this.state.isOpen ? faAngleUp : faAngleDown} />
 					</div>
 					<div className={className}>
 						{Array.isArray(content) ? (

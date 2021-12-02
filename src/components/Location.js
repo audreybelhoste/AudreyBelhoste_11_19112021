@@ -4,6 +4,7 @@ import { getLocationById } from "../services/locationService"
 import Tag from "./Tag";
 import Rating from "./Rating";
 import Accordion from "./Accordion";
+import Gallery from "./Gallery";
 
 class Location extends Component {
 	render() {
@@ -13,6 +14,9 @@ class Location extends Component {
 
 		return (
 			<div className="location">
+				<Gallery 
+					images={currentLocation.pictures}
+				/>
 				<div className="location__infos">
 					<div>
 						<h1 className="location__infos__title"> {currentLocation.title} </h1>

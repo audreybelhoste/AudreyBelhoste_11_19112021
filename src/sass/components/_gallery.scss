@@ -1,0 +1,52 @@
+.gallery{
+	position: relative;
+
+	&__img-container{
+		height: 255px;
+		width: 100%;
+		border-radius: 10px;
+		overflow: hidden;
+
+		@include laptop{
+			height: 415px;
+			border-radius: 25px;
+		}
+
+		img{
+			//object-position: center;
+			object-fit: cover;
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	.svg-inline--fa{
+		font-size: 20px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		color: $brand-light;
+		cursor: pointer;
+
+		@include laptop{
+			font-size: 48px;
+		}
+	}
+
+	.fa-chevron-left{
+		left: 5px;
+
+		@include laptop{
+			left: 25px;
+		}
+	}
+
+	.fa-chevron-right{
+		right: 5px;
+
+		@include laptop{
+			right: 25px;
+		}
+	}
+
+}
