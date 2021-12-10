@@ -12,19 +12,19 @@
 		}
 
 		&__title{
-			font-size: 18px;
+			font-size: 1.5rem;
 
 			@include laptop{
-				font-size: 36px;
+				font-size: 2rem;
 			}
 		}
 
 		&__location{
-			font-size: 14px;
+			font-size: 1.1rem;
 			margin: 0;
 
 			@include laptop {
-				font-size: 18px;
+				font-size: 1rem;
 			}
 		}
 

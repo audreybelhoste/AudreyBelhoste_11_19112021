@@ -1,8 +1,8 @@
 .fa-star{
-	font-size: 15px;
+	font-size: 1.2rem;
 
 	@include laptop{
-		font-size: 30px;
+		font-size: 1.8rem;
 	}
 
 	&.empty{

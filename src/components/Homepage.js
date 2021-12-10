@@ -5,7 +5,14 @@ import Header from "./Header";
 import headerBackground from '../assets/images/background-homepage.png';
 
 class Homepage extends Component {
+	constructor(props) {
+		super(props)
+		this.state = { locations: []}
+	}
+
 	render() {
+		getAllLocations().then(data => {this.setState({ locations: data })})
+
 		return (
 			<div className="homepage">
 				<Header
@@ -15,7 +22,7 @@ class Homepage extends Component {
 				/>
 				<main className="main-content">
 					<div className="thumb-container">
-						{getAllLocations().map((element) => (
+						{this.state.locations.map((element) => (
 							<Thumb
 								key={element.id}
 								title={element.title}

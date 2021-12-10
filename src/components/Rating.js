@@ -4,16 +4,15 @@ import React from 'react'
 
 class Rating extends React.Component {
 	render() {
-		const { rating } = this.props
-		const range = [1, 2, 3, 4, 5]
-
+		const { rating, limit } = this.props
+		const range = [...Array(limit).keys()]
 		return (
 			<div className="rating">
 				{range.map((range) =>
-					rating >= range ? (
-						<FontAwesomeIcon icon={faStar} className="full" />
+					rating > range ? (
+						<FontAwesomeIcon icon={faStar} className="full" key={range} />
 					) : (
-						<FontAwesomeIcon icon={faStar} className="empty" />
+						<FontAwesomeIcon icon={faStar} className="empty" key={range} />
 					)
 				)}
 			</div>

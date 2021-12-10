@@ -23,15 +23,16 @@
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
-		font-size: 24px;
+		font-size: 2.1rem;
 		color: $brand-light;
 		margin: 0;
 		padding: 15px;
 		line-height: 1;
 		width: 100%;
+		max-width: 100%;
 
 		@include tablet{
-			font-size: 48px;
+			font-size: 2.6rem;
 			text-align: center;
 		}
 	}

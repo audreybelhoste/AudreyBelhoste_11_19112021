@@ -36,16 +36,16 @@ class Gallery extends Component {
 				</div>
 
 				{images.length > 1 && (
-          <FontAwesomeIcon 
-						icon={faChevronLeft}
-            onClick={() => this.previousImage()}
-          />
-        	)}
-					{images.length > 1 && (
+          <>
 						<FontAwesomeIcon 
-						icon={faChevronRight}
-						onClick={() => this.nextImage()}
-					/>
+							icon={faChevronLeft}
+							onClick={() => this.previousImage()}
+						/>
+						<FontAwesomeIcon 
+							icon={faChevronRight}
+							onClick={() => this.nextImage()}
+						/>
+					</>
 					)}
 			</div>
 		);

@@ -1,3 +1,3 @@
-import { about } from "../aboutInformations";
+import { about } from "../assets/data/aboutInformations";
 
 export const getAboutInformations = () => about;

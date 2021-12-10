@@ -1,0 +1,29 @@
+.error404{
+	text-align: center;
+	color: $brand-primary;
+
+	&__title{
+		font-size: 10rem;
+		line-height: 1;
+		font-weight: 700;
+
+		@include laptop{
+			font-size: 18rem;
+			margin: 60px;
+		}
+	}
+
+	&__content{
+		font-size: 1.3rem;
+
+		@include laptop{
+			font-size: 2rem;
+		}
+	}
+
+	a{
+		color: $brand-primary;
+		margin: 150px 0 50px;
+		display: block;
+	}
+}

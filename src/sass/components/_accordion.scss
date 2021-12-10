@@ -29,6 +29,7 @@
 		color: $brand-primary;
 		padding: 20px 11px;
 		border-radius: 10px;
+		transition: all 1s ease;
 
 		@include laptop{
 			padding: 35px 20px;
@@ -36,20 +37,30 @@
 
 		p{
 			margin: 0;
+			transition: all 1s ease;
+			opacity: 0;
 		}
 
 		ul{
 			list-style: none;
 			padding: 0;
 			margin: 0;
+			transition: all 1s ease;
+			opacity: 0;
 		}
 
 		&-open{
-			display: block;
+			max-height: 200px;
+
+			ul, p{
+				opacity: 1;
+			}
 		}
 
 		&-close{
-			display: none;
+			max-height: 0;
+			overflow: hidden;
+			padding: 0 11px;
 		}
 	}
 }

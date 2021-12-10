@@ -21,7 +21,7 @@
 	}
 
 	.svg-inline--fa{
-		font-size: 20px;
+		font-size: 1.6rem;
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
@@ -29,7 +29,7 @@
 		cursor: pointer;
 
 		@include laptop{
-			font-size: 48px;
+			font-size: 3rem;
 		}
 	}
 

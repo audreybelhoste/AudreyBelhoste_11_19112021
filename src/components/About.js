@@ -18,6 +18,7 @@ class About extends Component {
 							<Accordion
 								title={element.title}
 								content={element.content}
+								key={key}
 							/>
 					))}
 				</div>
