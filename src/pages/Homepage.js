@@ -1,7 +1,7 @@
 import { Component } from "react";
-import Thumb from "./Thumb";
+import Thumb from "../components/Thumb";
 import { getAllLocations } from "../services/locationService";
-import Header from "./Header";
+import Header from "../components/Header";
 import headerBackground from '../assets/images/background-homepage.png';
 
 class Homepage extends Component {

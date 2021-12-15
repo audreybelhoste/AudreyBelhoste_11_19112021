@@ -1,15 +1,15 @@
-import '../sass/App.scss';
-import Nav from "./Nav";
-import Homepage from "./Homepage";
-import About from "./About";
-import Location from "./Location";
-import E404 from "./E404";
+import './sass/App.scss';
+import Nav from "./components/Nav";
+import Homepage from "./pages/Homepage";
+import About from "./pages/About";
+import Location from "./pages/Location";
+import E404 from "./pages/Error";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
-import Footer from './Footer';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/location/:id">
+          <Route exact path="/location/:id">
             <Location />
           </Route>
           <Route path="/404">

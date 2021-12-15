@@ -1,10 +1,10 @@
 import { Component } from "react";
 import { Redirect, withRouter } from "react-router"
 import { getLocationById } from "../services/locationService"
-import Tag from "./Tag";
-import Rating from "./Rating";
-import Accordion from "./Accordion";
-import Gallery from "./Gallery";
+import Tag from "../components/Tag";
+import Rating from "../components/Rating";
+import Accordion from "../components/Accordion";
+import Gallery from "../components/Gallery";
 
 class Location extends Component {
 	constructor(props) {

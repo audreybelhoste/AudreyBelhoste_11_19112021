@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { getAboutInformations } from "../services/aboutService";
-import Accordion from "./Accordion";
-import Header from "./Header";
+import Accordion from "../components/Accordion";
+import Header from "../components/Header";
 import headerBackground from '../assets/images/background-about.png';
 
 class About extends Component {
