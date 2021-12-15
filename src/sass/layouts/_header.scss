@@ -28,12 +28,13 @@
 		margin: 0;
 		padding: 15px;
 		line-height: 1;
-		width: 100%;
 		max-width: 100%;
-
+		
+		
 		@include tablet{
 			font-size: 2.6rem;
 			text-align: center;
+			width: 100%;
 		}
 	}
 }

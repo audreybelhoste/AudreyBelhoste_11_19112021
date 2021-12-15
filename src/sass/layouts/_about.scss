@@ -1,4 +1,6 @@
 .about{
+	min-height: calc(100vh - 300px);
+
 	&__accordions__container{
 		max-width: 1023px;
 		margin: 0 auto;
