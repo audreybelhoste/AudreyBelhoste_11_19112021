@@ -61,6 +61,10 @@
 			max-height: 0;
 			overflow: hidden;
 			padding: 0 11px;
+
+			@include laptop{
+				padding: 0 20px;
+			}
 		}
 	}
 }
